@@ -3,7 +3,6 @@
 #####=== Java ===#####
 *.log
 *.class
-*.iml
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -149,3 +148,7 @@ logs
 
 # IntelliJ
 /out/
+
+.idea/copyright/profiles_settings.xml
+.idea/misc.xml
+.idea/workspace.xml
