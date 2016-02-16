@@ -123,7 +123,7 @@ public class Main {
 
     /**
      * inner class 反射
-     *
+     * 获取内部类，操作内部类的方法
      * */
     private void exmp4(){
         // 获取class
