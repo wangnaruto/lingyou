@@ -29,6 +29,13 @@
         <module name="service-impl" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
+      <module name="lingyou" target="1.5" />
+      <module name="mng" target="1.5" />
+      <module name="public" target="1.5" />
+      <module name="service" target="1.5" />
+      <module name="service-impl" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
