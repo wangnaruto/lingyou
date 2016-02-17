@@ -23,14 +23,14 @@ public class Main {
     private void exmp1(){
         // 获取class
         try {
-            Class<?> defaultClass = Class.forName("com.linyou.students.model.DefaultClass");
+            Class<?> defaultClass = Class.forName("controller.linyou.students.model.DefaultClass");
             // 默认修饰符的class不同package调用
 
             ClassLoader loader = ClassLoader.getSystemClassLoader();
             loader.setDefaultAssertionStatus(true);
-            loader.setPackageAssertionStatus("com.linyou.students",true);
+            loader.setPackageAssertionStatus("controller.linyou.students",true);
             loader.clearAssertionStatus();
-            defaultClass = loader.loadClass("com.linyou.students.model.DefaultClass");
+            defaultClass = loader.loadClass("controller.linyou.students.model.DefaultClass");
 
             //
             Field[] fields = defaultClass.getFields();
@@ -55,7 +55,7 @@ public class Main {
     private void exmp2(){
         // 获取class
         try {
-            Class<?> publicClass = Class.forName("com.linyou.students.model.PublicClass");
+            Class<?> publicClass = Class.forName("controller.linyou.students.model.PublicClass");
 
             Field[] fields = publicClass.getFields();
             Object object = publicClass.newInstance();
@@ -87,7 +87,7 @@ public class Main {
     private void exmp3(){
         // 获取class
         try {
-            Class<?> publicClass = Class.forName("com.linyou.students.model.FinalsClass");
+            Class<?> publicClass = Class.forName("controller.linyou.students.model.FinalsClass");
 
             Field[] fields = publicClass.getFields();
 
@@ -128,7 +128,7 @@ public class Main {
     private void exmp4(){
         // 获取class
         try {
-            Class<?> publicClass = Class.forName("com.linyou.students.model.InnerClass");
+            Class<?> publicClass = Class.forName("controller.linyou.students.model.InnerClass");
 
             Field[] fields = publicClass.getFields();
             Field[] dFields = publicClass.getDeclaredFields();

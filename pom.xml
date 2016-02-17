@@ -21,6 +21,7 @@
         <webmagic.version>0.5.2</webmagic.version>
         <jsoup.version>1.7.2</jsoup.version>
         <htmlcleaner.version>2.5</htmlcleaner.version>
+        <json.spring.version>1.1</json.spring.version>
 
     </properties>
 
@@ -50,6 +51,18 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
+                <version>${spring.mvc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>org.springframework.web</artifactId>
+                <version>${spring.mvc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>org.springframework.web.servlet</artifactId>
                 <version>${spring.mvc.version}</version>
             </dependency>
 
@@ -115,6 +128,13 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
+            </dependency>
+
+            <!--json-->
+            <dependency>
+                <groupId>net.sf.spring-json</groupId>
+                <artifactId>spring-json</artifactId>
+                <version>${json.spring.version}</version>
             </dependency>
 
             <!-- 解析依赖库：不能使用下列规定的解析库之外的其他库，否则会出现运行时错误 -->
