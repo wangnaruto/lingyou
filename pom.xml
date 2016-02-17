@@ -12,7 +12,9 @@
         <spring.mvc.version>3.0.5.RELEASE</spring.mvc.version>
         <mybaits.spring.version>1.2.3</mybaits.spring.version>
         <log4j.version>1.2.17</log4j.version>
+        <slf4j.version>1.7.13</slf4j.version>
         <logging.version>1.2</logging.version>
+        <lombok.version>1.16.6</lombok.version>
         <junit.version>4.12</junit.version>
         <mybaits.gen.version>1.3.2</mybaits.gen.version>
         <mybaits.version>3.3.0</mybaits.version>
@@ -104,6 +106,18 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
 
             <!--spring redis-->
